@@ -128,10 +128,10 @@ void inCome(void)
 				printf("本次收入金额：");
 				scanf("%lf", &detail[flag].money);
 				scanf("%*[^\n]"); scanf("%*c");
-				if (detail[flag].money < 0)
+				if (detail[flag].money <= 0)
 				{
 					printf("\n\t\t\t**************************");
-					printf("\n\t\t\t*输入的金额必须为非负数  *");
+					printf("\n\t\t\t*输入的金额必须为正数    *");
 					printf("\n\t\t\t*请您重新输入本次收入金额*");
 					printf("\n\t\t\t**************************");
 					Sleep(2000);
@@ -201,10 +201,10 @@ void pay(void)
 				printf("本次支出金额：");
 				scanf("%lf", &detail[flag].money);
 				scanf("%*[^\n]"); scanf("%*c");
-				if (detail[flag].money < 0)
+				if (detail[flag].money <= 0)
 				{
 					printf("\n\t\t\t**************************");
-					printf("\n\t\t\t*输入的金额必须为非负数  *");
+					printf("\n\t\t\t*输入的金额必须为正数    *");
 					printf("\n\t\t\t*请您重新输入本次支出金额*");
 					printf("\n\t\t\t**************************");
 					Sleep(2000);
